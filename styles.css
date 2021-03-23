@@ -454,7 +454,7 @@ footer {
 }
 
 
-@media (min-width: 786px) and (max-width: 1200px) {
+@media (min-width: 780px) and (max-width: 1200px) {
 
     .intro__picture img {
         max-width: 320px;
