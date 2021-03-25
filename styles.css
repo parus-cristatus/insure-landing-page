@@ -454,10 +454,14 @@ footer {
 }
 
 
-@media (min-width: 780px) and (max-width: 1200px) {
+@media screen and (min-width: 780px) and (max-width: 1200px) {
+
+    .intro__picture {
+        top: 10%;
+        right: 5%;
+    }
 
     .intro__picture img {
         max-width: 320px;
-        right: 2%;
     }
 }
