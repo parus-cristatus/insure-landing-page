@@ -1,7 +1,7 @@
 
     document.addEventListener("DOMContentLoaded", function() { 
 
-        let isMobile = window.matchMedia("only screen and (max-width: 1200px) and (orientation: portrait)").matches;
+        let isMobile = window.matchMedia("only screen and (max-width: 1200px)").matches;
         const header = document.getElementById("mainHeader");
         const headerClone = header.cloneNode(true);
         headerClone.id = "cloneHeader";

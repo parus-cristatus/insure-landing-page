@@ -499,12 +499,8 @@ footer {
 
 @media screen and (max-width: 1200px) and (orientation: landscape) {
 
-    .nav-mobile-toggle {
-        opacity: 0;
-    }
 
     .nav--header {
-        opacity: 1;
         display: flex;
         justify-content: space-between;
         align-items: center;
