@@ -57,7 +57,6 @@ hr {
 }
 
 
-
 /* CONTAINERS */
 
 .container {
@@ -115,6 +114,41 @@ hr {
 
 /* SITE HEADER */
 
+
+/* FIXED HEADER ON SCROLL WITHOUT ANIMATION */
+
+.site-header.sticky {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,.3);
+    z-index: 3;
+
+}
+
+
+/* ======================================= */
+
+.site-header.clone {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-height: 0;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,.3);
+    z-index: 9999;
+    transition: all .5s ease-in;
+}
+
+.site-header.clone.show {
+    max-height: 500px;
+    overflow: visible;
+}
 
 .nav-item--header {
     margin-right: 1em;
@@ -322,7 +356,6 @@ footer {
         left: 0;
         top: 100%;
         z-index: 3;
-        min-height: 100vh;
         background-color: hsl(270, 9%, 17%);
         background-image: url("images/bg-pattern-mobile-nav.svg");
         background-repeat: no-repeat;
