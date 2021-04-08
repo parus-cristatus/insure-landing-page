@@ -35,6 +35,13 @@ a {
     color: hsl(270, 9%, 17%);
 }
 
+a:focus,
+input:focus {
+    outline-style: dotted;
+    outline-offset: 2px;
+    outline-color: hsl(228, 45%, 44%);
+}
+
 hr {
     margin: 0;
 }
@@ -118,28 +125,14 @@ hr {
 /* FIXED HEADER ON SCROLL WITH ANIMATION */
 
 
-/* .site-header.sticky {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: #fff;
-    box-shadow: 0 10px 10px 0 rgba(0,0,0,.3);
-    z-index: 3;
-    animation: slidein .4s;
-} */
-
-
-/* ======================================= */
-
 .site-header.clone {
     position: fixed;
     left: 0;
     right: 0;
-    /* max-height: 0;
+    max-height: 0;
     opacity: 0;
-    overflow: hidden; */
-    transform: translateY(-300%);
+    overflow: hidden;
+    transform: translateY(-100%);
     background-color: #fff;
     box-shadow: 0 10px 10px 0 rgba(0,0,0,.3);
     z-index: 9999;
@@ -147,11 +140,13 @@ hr {
 }
 
 .site-header.clone.show {
-    /* opacity: 1; */
+    opacity: 1;
+    max-height: 500px;
+    overflow: visible;
     transform: translateY(0);
-    /* max-height: 500px;
-    overflow: visible; */
 }
+
+/* ======================================= */
 
 .nav-item--header {
     margin-right: 1em;
@@ -367,7 +362,7 @@ footer {
         background-position: center bottom;
         background-size: cover;
         background-blend-mode: overlay;
-        transition: opacity .2s cubic-bezier(0.950, 0.050, 0.795, 0.035);
+        transition: opacity .2s ease-in;
         
     }
     
