@@ -167,12 +167,14 @@ hr {
 
 .nav-mobile-toggle {
     appearance: none;
-    display: none;
+    /* display: none; */
+    cursor: default;
+    opacity: 0;
     width: 32px;
     height: 32px;
     background-image: url("images/icon-hamburger.svg");
     background-repeat: no-repeat;
-    cursor: pointer;
+    transition: opacity .2s;
 }
 
 
@@ -344,10 +346,10 @@ footer {
 
 
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px)  {
 
     .nav-mobile-toggle {
-        display: inline-block;
+        opacity: 1;
     }
 
     .nav--header {
@@ -497,7 +499,12 @@ footer {
 
 @media screen and (max-width: 1200px) and (orientation: landscape) {
 
+    .nav-mobile-toggle {
+        opacity: 0;
+    }
+
     .nav--header {
+        opacity: 1;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -510,5 +517,13 @@ footer {
 
     .header__button {
         max-width: 200px;
+    }
+
+    .intro__picture {
+        height: 650px;
+    }
+
+    .intro__picture img {
+        object-position: center 10%;
     }
 }
