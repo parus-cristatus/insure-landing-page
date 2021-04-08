@@ -137,7 +137,7 @@ hr {
     left: 0;
     right: 0;
     max-height: 0;
-    opacity: 0;
+    /* opacity: 0; */
     overflow: hidden;
     transform: translateY(-100%);
     background-color: #fff;
@@ -147,7 +147,7 @@ hr {
 }
 
 .site-header.clone.show {
-    opacity: 1;
+    /* opacity: 1; */
     transform: translateY(0);
     max-height: 500px;
     overflow: visible;

@@ -18,10 +18,10 @@
           
           if (isActive) {
             toggle.checked = false;
-            headerClone.parentElement.setAttribute("aria-hidden", "false");
+            headerClone.setAttribute("aria-hidden", "false");
           } else {
             cloneToggle.checked = false;
-            headerClone.parentElement.setAttribute("aria-hidden", "true");
+            headerClone.setAttribute("aria-hidden", "true");
           }
           
       };
