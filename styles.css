@@ -114,7 +114,24 @@ hr {
 
 /* SITE HEADER */
 
-.site-header.clone {
+
+/* FIXED HEADER ON SCROLL WITHOUT ANIMATION */
+
+.site-header.sticky {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,.3);
+    z-index: 3;
+}
+
+
+/* ======================================= */
+
+/* .site-header.clone {
     position: fixed;
     top: 0;
     left: 0;
@@ -130,7 +147,7 @@ hr {
 .site-header.clone.show {
     max-height: 500px;
     overflow: visible;
-}
+} */
 
 .nav-item--header {
     margin-right: 1em;
@@ -345,7 +362,6 @@ footer {
         background-size: cover;
         background-blend-mode: overlay;
         transition: opacity .2s cubic-bezier(0.950, 0.050, 0.795, 0.035);
-        overflow-y: scroll;
         
     }
     
