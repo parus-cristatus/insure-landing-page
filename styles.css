@@ -114,15 +114,6 @@ hr {
 
 /* SITE HEADER */
 
-@keyframes slidein {
-    from {
-        transform: translateY(-100%);
-    }
-
-    to {
-        transform: translateY(0);
-    }
-}
 
 /* FIXED HEADER ON SCROLL WITH ANIMATION */
 
@@ -505,3 +496,20 @@ footer {
     
 }
 
+@media screen and (max-width: 1200px) and (orientation: landscape) {
+
+    .nav--header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5% 0;
+    }
+
+    .nav-item--header {
+        margin-bottom: 0;
+    }
+
+    .header__button {
+        max-width: 200px;
+    }
+}
